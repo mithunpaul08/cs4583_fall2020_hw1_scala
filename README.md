@@ -22,8 +22,10 @@ Also, you **should not edit** these files:
 - `src/test/resources/input.txt`
 - `src/test/scala/edu/arizona/cs/QueryEngineTest.scala`
 
-**Note: The file `src/test/resources/input.txt` is the input file you must use (or would have started using) as per hw3 guidelines. Please don't edit it or move it.**
+# To run your code
 
+
+To run all the provided tests, run the `sbt clean` and `sbt run` script from the directory containing `build.sbt`
 
 # Test your code
 

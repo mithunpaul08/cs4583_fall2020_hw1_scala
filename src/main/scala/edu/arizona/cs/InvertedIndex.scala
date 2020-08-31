@@ -24,7 +24,7 @@ class InvertedIndex(var inputFilePath: String) {
     val source = Source.fromResource(inputFilePath)
     for (line <- source.getLines()) {
       println(line)
-//      ##do whatever you want to do with the data
+      // create index with the data
     }
     source.close()
     indexExists = true

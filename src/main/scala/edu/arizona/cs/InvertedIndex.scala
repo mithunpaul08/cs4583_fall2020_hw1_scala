@@ -9,10 +9,14 @@ object InvertedIndex {
 
   def main(args: Array[String]): Unit = {
       val fileName: String = "Docs.txt"
-      println("********Welcome to  Homework 1!")
+      println("********Welcome to  Homework 1 Qn 5!")
+      val name = readLine("Which one of the 3 sub questions would you like to test. Press 1 for qn1, 2 for qn2 and 3 for qn 3 ")
+    val objInvertedIndex: InvertedIndex = new InvertedIndex(fileName)
+    if name=="1" {
       val query: String = "schizophrenia AND drug"
-      val objInvertedIndex: InvertedIndex = new InvertedIndex(fileName)
-      val ans1: Array[String] = objInvertedIndex.runQ5_1(query)
+
+      val ans1: Array[String] = objInvertedIndex.runQ5_1 (query)
+    }
   }
 }
 

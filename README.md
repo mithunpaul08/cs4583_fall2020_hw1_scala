@@ -12,7 +12,7 @@ Minimally, you should install:
 
 # Write your code
 
-You will implement one function each for each of the 4 qns, Eg:`runQ5_1()` inside 
+You will implement one function each for each of the sub qns, Eg:`runQ5_1()` inside 
 the class `InvertedIndex`. These functions should return the documents as asked in the question, as a String array. 
 
 

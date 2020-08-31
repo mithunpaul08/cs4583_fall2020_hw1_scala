@@ -25,31 +25,35 @@ object InvertedIndex {
 class InvertedIndex(var inputFilePath: String) {
   var indexExists = false
   def buildIndex(): Unit = {
+    if(! indexExists) buildIndex()
+    {
     val source = Source.fromResource(inputFilePath)
     for (line <- source.getLines()) {
       println(line)
       // create index with the data
     }
+    
     source.close()
     indexExists = true
+    }
   }
 
   def runQ5_1(query: String): Array[String] = {
     if(! indexExists) buildIndex()
     val dummy_ans: Array[String] = Array("Doc1", "Doc4")
-    return dummy_ans
+    dummy_ans
   }
 
   def runQ5_2(query: String): Array[String] = {
     if(! indexExists) buildIndex()
     val dummy_ans: Array[String] = Array("Doc1", "Doc2", "Doc3", "Doc4")
-    return dummy_ans
+     dummy_ans
   }
 
   def runQ5_3(query: String): Array[String] = {
     if(! indexExists) buildIndex()
     val dummy_ans: Array[String] = Array("Doc1", "Doc2", "Doc4")
-    return dummy_ans
+     dummy_ans
   }
 
 
